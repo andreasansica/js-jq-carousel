@@ -51,6 +51,24 @@ $(document).ready(function () {
     }
 
     }
-  }
 
-);
+
+
+
+  // funzione per avanti e indietro freccia tastiera
+  $(document).keyup(function (x) {
+
+    // codici chiave
+      var left = 37;
+      var right = 39;
+
+      if (x.keyCode == left) {
+        prevImg();
+
+    } else if (x.keyCode == right){
+      nextImg();
+    }
+
+    });
+
+  });
